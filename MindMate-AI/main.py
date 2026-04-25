@@ -10,8 +10,29 @@ def is_online():
     except OSError:
         return False
 
+def mood_checkin():
+    print("MindMate: How would you rate your mood right now?")
+    print("  1 - Very bad")
+    print("  2 - Bad")
+    print("  3 - Okay")
+    print("  4 - Good")
+    print("  5 - Very good")
+    rating = input("You (1-5): ")
+    if rating == "1":
+        print("MindMate: I am sorry to hear that. I am here for you. Tell me what is going on.\n")
+    elif rating == "2":
+        print("MindMate: That sounds tough. Would you like to talk about it?\n")
+    elif rating == "3":
+        print("MindMate: Okay is a good place to start. How can I support you today?\n")
+    elif rating == "4":
+        print("MindMate: Glad to hear that! What has been going well?\n")
+    elif rating == "5":
+        print("MindMate: That is wonderful! Keep doing what is working for you.\n")
+    else:
+        print("MindMate: Thank you for sharing. How can I help you today?\n")
+
 print("MindMate AI - Mental Health Chatbot")
-print("Type 'quit' to exit")
+print("Type 'quit' to exit | Type 'mood' for a mood check-in")
 print()
 
 if is_online():
@@ -25,7 +46,9 @@ while True:
     if user_input.lower() == "quit":
         print("MindMate: Take care. Remember, help is always available.")
         break
-    if check_crisis(user_input):
+    elif user_input.lower() == "mood":
+        mood_checkin()
+    elif check_crisis(user_input):
         print("MindMate: " + get_crisis_response())
     elif is_online():
         response = gemini_chat(user_input)
