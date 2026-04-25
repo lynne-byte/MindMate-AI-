@@ -1,0 +1,65 @@
+{
+  "greetings": {
+    "keywords": [
+      "hello",
+      "hi",
+      "hey",
+      "good morning",
+      "habari"
+    ],
+    "responses": [
+      "Hello! I am MindMate. How are you feeling today?",
+      "Hi there! I am here to listen. How are you doing?"
+    ]
+  },
+  "anxiety": {
+    "keywords": [
+      "anxious",
+      "anxiety",
+      "worried",
+      "worry",
+      "nervous",
+      "panic",
+      "scared",
+      "fear"
+    ],
+    "responses": [
+      "I hear you. Try breathing in for 4 seconds, hold for 4, out for 4. Repeat 3 times.",
+      "You are safe. Focus on your breathing. In through the nose, out through the mouth."
+    ]
+  },
+  "depression": {
+    "keywords": [
+      "depressed",
+      "depression",
+      "sad",
+      "empty",
+      "hopeless",
+      "worthless",
+      "tired"
+    ],
+    "responses": [
+      "You are not alone. Many people feel this way and it can get better.",
+      "Your feelings are valid. Can you drink a glass of water or step outside for 2 minutes?"
+    ]
+  },
+  "stress": {
+    "keywords": [
+      "stressed",
+      "stress",
+      "overwhelmed",
+      "pressure",
+      "exhausted"
+    ],
+    "responses": [
+      "It sounds like you are carrying a lot. What feels most urgent?",
+      "Try writing down 3 things on your mind to get them out of your head."
+    ]
+  },
+  "unknown": {
+    "responses": [
+      "I am here to listen. Can you tell me more about how you are feeling?",
+      "I want to understand better. Could you describe what is on your mind?"
+    ]
+  }
+}
